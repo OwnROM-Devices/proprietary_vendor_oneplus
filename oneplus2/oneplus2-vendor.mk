@@ -127,9 +127,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/oneplus/oneplus2/proprietary/lib64/hw/fingerprint.msm8994.so:system/lib64/hw/fingerprint.msm8994.so \
     vendor/oneplus/oneplus2/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
-    vendor/oneplus/oneplus2/proprietary/lib64/libopcamera.so:system/lib64/libopcamera.so \
-    vendor/oneplus/oneplus2/proprietary/lib64/libopcameralib.so:system/lib64/libopcameralib.so \
     vendor/oneplus/oneplus2/proprietary/lib64/libparam.so:system/lib64/libparam.so \
+vendor/oneplus/oneplus2/proprietary/lib64/libfilter-sdk.so:system/lib64/libfilter-sdk.so \
+vendor/oneplus/oneplus2/proprietary/lib64/libopbaselib.so:system/lib64/libopbaselib.so \
+vendor/oneplus/oneplus2/proprietary/lib64/libopcamera.so:system/lib64/libopcamera.so \
+vendor/oneplus/oneplus2/proprietary/lib64/libopcameralib.so:system/lib64/libopcameralib.so \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
