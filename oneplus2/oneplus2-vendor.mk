@@ -115,6 +115,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/oneplus/oneplus2/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/oneplus/oneplus2/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
+    vendor/oneplus/oneplus2/proprietary/etc/thermal-engine-8994.conf:system/etc/thermal-engine-8994.conf \
     vendor/oneplus/oneplus2/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/oneplus/oneplus2/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/oneplus2/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
