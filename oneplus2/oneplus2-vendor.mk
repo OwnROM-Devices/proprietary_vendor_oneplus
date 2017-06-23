@@ -1,5 +1,5 @@
 # Copyright (C) 2015-2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -68,6 +68,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw/mbn_ota.txt:system/etc/firmware/mbn_ota/mcfg_sw/mbn_ota.txt \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_ATT-VoLTE.mbn:system/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_ATT-VoLTE.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn:system/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_CU_OpenMkt-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_CU_OpenMkt-Commercial.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_OEM_Overseas-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_OEM_Overseas-Commercial.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_Reliance-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_Reliance-Commercial.mbn \
+    vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_TMO-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_TMO-Commercial.mbn \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b00:system/etc/firmware/fingerprints.b00 \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b01:system/etc/firmware/fingerprints.b01 \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b02:system/etc/firmware/fingerprints.b02 \
@@ -98,14 +105,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/oneplus/oneplus2/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oneplus/oneplus2/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/oneplus/oneplus2/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/oneplus/oneplus2/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/oneplus/oneplus2/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
+    vendor/oneplus/oneplus2/proprietary/etc/thermal-engine-8994.conf:system/etc/thermal-engine-8994.conf \
     vendor/oneplus/oneplus2/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/oneplus/oneplus2/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/oneplus2/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
@@ -157,7 +167,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
-    vendor/oneplus/oneplus2/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
@@ -342,6 +351,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
+    vendor/oneplus/oneplus2/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
@@ -401,7 +411,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libDivxDrm.so:system/vendor/lib64/libDivxDrm.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
-    vendor/oneplus/oneplus2/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:system/vendor/lib64/libOmxAmrwbplusDec.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
@@ -451,6 +460,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
+    vendor/oneplus/oneplus2/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
+    vendor/oneplus/oneplus2/proprietary/vendor/lib64/libloc_xtra.so:system/vendor/lib64/libloc_xtra.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
@@ -532,3 +543,4 @@ PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook \
     pp_calib_data_jd35695_1080p_cmd_mode_dsi_panel
+
